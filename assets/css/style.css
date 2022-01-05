@@ -159,6 +159,11 @@ li {
   margin-left: 60px;
   position: relative;
   text-transform: uppercase;
+  transition: .3s;
+}
+
+.menu-area nav ul li a:hover {
+    opacity: .5;
 }
 
 .menu-area nav ul li a i {
@@ -252,11 +257,14 @@ opacity: 1;
 }
 
 .mobile-menu nav ul li a {
-  color: #272835;
   font-size: 16px;
   line-height: 40px;
   transition: .3s;
   text-transform: uppercase;
+}
+
+.mobile-menu nav ul li a:hover {
+    opacity: .5;
 }
 
 .mobile-menu nav ul li a i {
@@ -350,6 +358,11 @@ section.service-area .container {
 
 .product-area {
 }
+
+section.product-area .slide {
+    opacity: 0;
+    width: 50%;
+}
 .product_cont {position: relative;}
 
 .product_cont h1 {
@@ -379,7 +392,7 @@ section.service-area .container {
     font-weight: 300;
     margin-bottom: 30px;
 }
-.product_blk {max-width: 740px;margin-bottom: 150px;text-align: center;}
+.product_blk {max-width: 740px;margin-bottom: 150px;text-align: center;padding: 0 50px;}
 
 .product_blk.margin_top {
     margin-top: 120px;
@@ -394,39 +407,11 @@ section.service-area .container {
     font-weight: 200;
 }
 
-.product_blk i {}
+.product_blk i {
+}
 
 .product_blk i img {
     width: 100%;
-}
-section.product-area .colam-lg-6 {
-  /* flex: 0 0 48%; */
-  width: 46%;
-  display: inline-block;
-}
-
-section.product-area .row:nth-child(2) {
-  justify-content: space-between;
-}
-
-section.product-area .row:nth-child(2) .col-lg-6:nth-child(3) {
-    margin-top: -31%;
-}
-
-section.product-area .row:nth-child(2) .col-lg-6:nth-child(5) {
-    margin-top: -45%;
-}
-
-section.product-area .row:nth-child(2) .col-lg-6:nth-child(7) {
-    margin-top: -43%;
-}
-
-section.product-area .row:nth-child(2) .col-lg-6:nth-child(9) {
-    margin-top: -35%;
-}
-
-section.product-area .row:nth-child(2) .col-lg-6 {
-    flex: 0 0 47.5%;
 }
 /* product Section End */
 
@@ -447,6 +432,11 @@ section.product-area .row:nth-child(2) .col-lg-6 {
 .footer_cont ul li a {
     font-size: 16px;
     display: block;
+    transition: .3s;
+}
+
+.footer_cont ul li a:hover {
+    opacity: .5;
 }
 
 .footer_cont h2 {
@@ -468,7 +458,10 @@ section.product-area .row:nth-child(2) .col-lg-6 {
     margin-top: 30px;
 }
 
-.social_link ul li a {
+.social_link ul li a {transition: .3s;}
+
+.social_link ul li a:hover {
+    opacity: .5;
 }
 
 .social_link ul li a i {
