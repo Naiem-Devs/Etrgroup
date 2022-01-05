@@ -149,6 +149,7 @@ li {
 .menu-area nav ul li ul li a {
     width: max-content;
     margin-bottom: 10px;
+    margin-left: 0;
 }
 
 .menu-area nav ul li a {
@@ -158,6 +159,12 @@ li {
   margin-left: 60px;
   position: relative;
   text-transform: uppercase;
+}
+
+.menu-area nav ul li a i {
+    font-size: 23px;
+    transform: translateY(3px);
+    margin-left: 4px;
 }
 .menu-area nav ul li a.theme-btn {
   background: white;
@@ -204,15 +211,16 @@ li {
   position: fixed;
   width: 320px;
   height: 100vh;
-  background: #ffffff;
+  background: #d2c2b5;
   z-index: 99;
-  box-shadow: 0px 0px 9px -1px #737373;
+  box-shadow: 0px 0px 9px -1px #a9a9a9;
   top: 0;
   left: 0;
   transition: .3s;
   margin-left: -400px;
   padding-left: 40px;
   padding-top: 100px;
+  overflow-y: auto;
 }
 .siteBar{
   margin-left: 0; 
@@ -227,15 +235,32 @@ li {
   display: block;
 }
 
+ul#mobile_nav ul {
+  margin-left: 30px;
+  height: 0;
+  opacity: 0;
+  transition: .3s;
+}
+
+ul#mobile_nav li:hover ul {
+height: auto;
+opacity: 1;
+}
+.mobile-menu nav ul li:hover ul {
+  height: auto;
+  opacity: 1;
+}
+
 .mobile-menu nav ul li a {
   color: #272835;
   font-size: 16px;
   line-height: 40px;
   transition: .3s;
+  text-transform: uppercase;
 }
 
-.mobile-menu nav ul li a:hover { 
-  color: #ff4900;
+.mobile-menu nav ul li a i {
+    font-size: 20px;
 }
 
 .mobile-menu ul#pills-tab li {
@@ -279,13 +304,11 @@ li {
   top: 15px;
   width: 40px;
   height: 40px;
-  background: #ff4900;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  font-size: 22px;
-  color: #fff;
-  box-shadow: 0px 0px 17px -2px #0000004a;
+  font-size: 30px;
+  color: #070707;
 }
 
 /* Header section END */
@@ -302,7 +325,7 @@ li {
     color: #fff;
 }
 
-.hero_cont h1 {font-size: 50px;color: #fff;font-weight: 200;}
+.hero_cont h1 {color: #fff;font-weight: 200;}
 /* hero Section End */
 
 
@@ -337,12 +360,14 @@ section.service-area .container {
     left: 50%;
     transform: translateX(-50%);
     text-transform: capitalize;
+    width: 100%;
+    text-align: center;
 }
 
 .product_cont img {
     width: 100%;
 }
-.gov_logo {width: max-content;margin: 40px auto;}
+.gov_logo {display: flex;width: max-content;margin: 40px auto;}
 
 .gov_logo a {
     margin: 0 8px;
@@ -410,7 +435,14 @@ section.product-area .row:nth-child(2) .col-lg-6 {
 
 .footer-area {padding: 100px 0 80px;background: #e1d3ca;}
 
-.footer_cont {text-align: center;}
+.footer_cont {text-align: center;position: relative;}
+
+.side_border:after,.side_border:before {content: "";position: absolute;width: 1px;height: 150px;background: #aea39a;left: 0;top: 0;}
+
+.side_border:after {
+    left: auto;
+    right: 0;
+}
 
 .footer_cont ul li a {
     font-size: 16px;
