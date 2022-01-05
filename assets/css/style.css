@@ -384,6 +384,22 @@ section.product-area .row:nth-child(2) {
   justify-content: space-between;
 }
 
+section.product-area .row:nth-child(2) .col-lg-6:nth-child(3) {
+    margin-top: -31%;
+}
+
+section.product-area .row:nth-child(2) .col-lg-6:nth-child(5) {
+    margin-top: -45%;
+}
+
+section.product-area .row:nth-child(2) .col-lg-6:nth-child(7) {
+    margin-top: -43%;
+}
+
+section.product-area .row:nth-child(2) .col-lg-6:nth-child(9) {
+    margin-top: -35%;
+}
+
 section.product-area .row:nth-child(2) .col-lg-6 {
     flex: 0 0 47.5%;
 }
